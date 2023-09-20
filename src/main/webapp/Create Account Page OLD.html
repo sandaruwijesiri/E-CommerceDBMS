@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+</head>
+
+<body>
+    <h1>Create your Account</h1>
+    <form action="/Servlet01" method="get">
+	  First Name <input type="text" name="firstname"> <br><br>
+	  Last Name <input type="text" name="lastname"> <br><br>
+      Username <input type="text" name="username"> <br><br>
+      Password <input type="Password" id="pass" name="pass"> <br><br>
+	  Re-enter Password <input type="Password" id="repass" name="repass"> <br><br>
+	  Telephone <input type="text" name="phone"> <br><br>
+	  City <select name="city" id="citySelection">
+					  <option value="ColomboCitySelected">Colombo</option>
+					  <option value="KandyCitySelected">Kandy</option>
+					  <option value="RathnapuraCitySelected">Rathnapura</option>
+					  <option value="GalleCitySelected">Galle</option>
+					  <option value="KurunegalaCitySelected">Kurunegala</option>
+					  <option value="JaffnaCitySelected">Jaffna</option>
+					  <option value="AnuradhapuraCitySelected">Anuradhapura</option>
+					  <option value="BadullaCitySelected">Badulla</option>
+					  <option value="AmparaCitySelected">Ampara</option>
+					  <option value="OtherCitySelected">Other</option>
+					</select><br><br>
+	  Address <input type="text" name="address"> <br><br>
+        <button type="submit" name="button" value="createAcc">Create Account</button>
+    </form>
+</body>
+</html>

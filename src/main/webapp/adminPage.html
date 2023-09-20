@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .hero{
+			height: 100%;
+			width: 100%;
+			background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../assets/Other/backgroundGrad.jpg');
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+		}
+
+        .submit-btn{
+			width: 35%;
+			padding: 10px 30px;
+			cursor: pointer;
+			display: block;
+			margin: auto;
+			background: linear-gradient(to right, #ff105f, #ffad06);
+			border: 0;
+			outline: none;
+			border-radius: 30px;
+		}
+
+        #AdminPage{
+			left: 50px;
+		}
+
+        .header {
+			font: 20px 'Poppins';
+			padding: 10px;
+			text-align: center;
+			background: #b3d8e9;
+			color: rgb(23, 11, 11);
+			font-size: 14px;
+			border-radius: 8px;
+		}
+
+		.footer-copyright{
+			background-color: rgb(41, 244, 244);
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			color: rgb(30, 29, 29);
+			font-size: 16px;
+			font-weight: bold;
+			padding: 10px 0;
+		}
+
+    </style>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+</head>
+
+
+<body> 
+    <div class = "hero">
+        <div class = "header">
+            <h1> Admin Page </h1>
+            
+        </div>
+        <br> 
+        <br>
+        <form action="welcome" method="get">  
+            <button type="submit" class="submit-btn" name="AdminViewAllOrders" value="">View Orders</button><br>
+            <br>
+            <button type="submit" class="submit-btn" name="AdminViewCategorySales" value="">View Category Sales</button><br>
+            <br>
+            <button type="submit" class="submit-btn" name="AdminViewProductSalesTimePeriod" value="">View Product Sales Within A Given Time Period</button><br>
+            <br>
+            <button type="submit" class="submit-btn" name="AdminTimePeriodWithMostOrdersOnAProduct" value="">Time Period With Most Orders On A Product</button><br>
+            <br>
+            <button type="submit" class="submit-btn" name="AdminViewSalesReport" value="">View Sales Report</button>
+        </form>
+
+        <div class="footer-copyright">
+            <p>Copyright Â© 2022 E-Commerce. All Rights Reserved.</p>
+        </div>
+
+    </div>
+
+    
+
+
+</body>
+</html>

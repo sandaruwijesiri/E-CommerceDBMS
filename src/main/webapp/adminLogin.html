@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .hero{
+			height: 100%;
+			width: 100%;
+			background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../assets/Other/backgroundGrad.jpg');
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+		}
+
+        
+		.form-box{
+			width: 380px;
+			height: 360px;
+			position: relative;
+			margin: 6% auto;
+			background: rgb(245, 242, 242);
+			padding: 5px;
+			overflow: hidden;
+			border-radius: 8px;
+
+		}
+
+        .input-group{
+			top: 120px;
+			position: absolute;
+			width: 280px;
+			transition: .5s;
+		}
+
+		.input-field{
+			width: 100%;
+			padding: 10px 0;
+			margin: 5px 0;
+			border-left: 0;
+			border-top: 0;
+			border-right: 0;
+			border-bottom: 1px solid #999;
+			outline: none;
+			background: transparent;
+		}
+
+        .submit-btn{
+			width: 85%;
+			padding: 10px 30px;
+			cursor: pointer;
+			display: block;
+			margin: auto;
+			background: linear-gradient(to right, #ff105f, #ffad06);
+			border: 0;
+			outline: none;
+			border-radius: 30px;
+		}
+
+        #LogIn{
+			left: 50px;
+		}
+
+        .header {
+			font: 20px 'Poppins';
+			padding: 10px;
+			text-align: center;
+			background: #b3d8e9;
+			color: rgb(23, 11, 11);
+			font-size: 14px;
+			border-radius: 8px;
+		}
+
+		.footer-copyright{
+			background-color: rgb(41, 244, 244);
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			color: rgb(30, 29, 29);
+			font-size: 16px;
+			font-weight: bold;
+			padding: 10px 0;
+		}
+
+    </style>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login Page</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="header">
+                <h1>Log In</h1>
+            </div>
+            <form action="/Servlet01" method="get" class="input-group">
+                    <input type="text" name="admin_name" class="input-field" placeholder="Admin_name" required><br><br>
+                    <input type="Password" name="password" class="input-field" id="pass" placeholder="Password" required><br><br><br>
+            		<button type="submit" class="submit-btn" name="button" value="AdminLogin">Log In</button>
+            </form>
+        </div>
+		<div class="footer-copyright">
+			<p>Copyright © 2022 E-Commerce. All Rights Reserved.</p>
+		</div>
+    </div>   
+</body>
+</html>

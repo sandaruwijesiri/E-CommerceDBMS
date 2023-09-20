@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+	<style>
+		h1{text-align: center; color:blanchedalmond ; font-size:500%;}
+		*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+	}
+	.container{
+		width: 100%;
+		height: 100vh;
+		background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../assets/Other/homepageimage.jpg');
+		background-position: center;
+		background-size: cover;
+	}
+	.center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	}
+
+	.button {
+	border: 2px solid black;
+	background-color: white;
+	color: black;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+		
+	}
+
+	.login {
+		
+	border-color: #04AA6D;
+	color: green;
+	margin-bottom: 40px;
+	;
+	}
+
+	.login:hover {
+		background: #04AA6D;
+		color: white;
+	}
+
+	.createAccount {
+		margin-bottom: 40px;
+		border-color:#04AA6D;
+		color: green;
+		}
+		
+	.createAccount:hover {
+		background: #04AA6D;
+		color: white;
+	}
+	.guestButton {
+		margin-bottom: 40px;
+		border-color:#04AA6D;
+		color: green;
+		}
+		
+	.guestButton:hover {
+		background: #04AA6D;
+		color: white;
+	}
+	.admin {
+		border-color:rgb#04AA6D;
+		color: green;
+		}
+		
+	.admin:hover {
+		background: #04AA6D;
+		color: white;
+	}
+	
+	</style>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="container">
+		
+			
+		<h1><b>E-Commerce</b></h1>
+		<div class="center">
+			<form action="/Servlet01" method="get">
+			<button type="submit" class="button login" name="button" value="loginButton">Login</button>
+			<h1></h1>
+			<button type="submit" class="button createAccount " name="button" value="createAccButton">Create Account</button>
+			<h1></h1>
+			<button type="submit" class="button guestButton " name="button" value="guestButton">Login as guest</button>
+			<h1></h1>
+			<button type="submit" class="button admin " name="button" value="adminButton">Admin</button>
+			<h1></h1>
+			</form>
+		</div>
+	</div>
+	
+
+
+</body></html>
