@@ -4,6 +4,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="s.css">
+
     <style>
       body {
         text-align: center;
@@ -22,10 +23,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sales Report</title>
 </head>
+
 <body>
 <header>
       <h1>Sales Report</h1> 
-    </header>
+</header>
+
 <%
             @SuppressWarnings("unchecked") 
 			int noOfOrders = (int)request.getAttribute("noOfOrders");
